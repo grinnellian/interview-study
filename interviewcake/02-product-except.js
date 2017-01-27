@@ -24,6 +24,7 @@ function productsExcept(nums) {
 
   // This is a tecnically unecessary second pass through the array
   // Still linear time, but eliminating this is nice.
+  // Whoops, could've used Array.fill(1);
   var results = Array.apply(null, Array(len)).map(function(index, item) { return 1 });
 
   var before = 1;
