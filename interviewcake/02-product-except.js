@@ -65,11 +65,13 @@ function productsExceptSinglePass(nums) {
 
 console.log("* Two Passes *");
 console.log("Given example " + JSON.stringify(productsExcept([1, 7, 3, 4])));
-console.log("Empty input "+ JSON.stringify(productsExcept([])));
-console.log("input length = 1 "+ JSON.stringify(productsExcept([42])));
+console.log("Empty input " + JSON.stringify(productsExcept([])));
+console.log("input length = 1 " + JSON.stringify(productsExcept([42])));
+console.log("input contains a 0 " + JSON.stringify(productsExcept([1, 7, 0, 4])));
 
 console.log("* Single Pass *");
 console.log("Given example " + JSON.stringify(productsExceptSinglePass([1, 7, 3, 4])));
 console.log("Empty input "+ JSON.stringify(productsExceptSinglePass([])));
 console.log("input length = 1 "+ JSON.stringify(productsExceptSinglePass([42])));
+console.log("input contains a 0 " + JSON.stringify(productsExceptSinglePass([1, 7, 0, 4])));
 
