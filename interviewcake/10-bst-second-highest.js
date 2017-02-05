@@ -26,7 +26,7 @@ BinaryTreeNode.prototype.insertRight = function(value) {
 // so, traverse the tree tracking the highest and second-highest values found
 BinaryTreeNode.prototype.secondLargest = function() {
   if ((!this.left && !this.right)) {
-        throw new Error('Tree must have at least 2 nodes');
+    throw new Error('Tree must have at least 2 nodes');
   }
 
   var max = -Infinity;
